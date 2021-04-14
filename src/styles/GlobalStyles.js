@@ -14,9 +14,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   color:${(props) => props.theme.color.prmary};
   font-size:${(props) => props.theme.font.size.regular};
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
+    font-size:${(props) => props.theme.font.size.small};
+  }
 }
 p{
   font-weight: ${(props) => props.theme.font.weight.light};
+
 }
 /* herro slogan 1st line*/
 h1,h2,h3,h4,h5,p {
@@ -26,18 +30,27 @@ h1,h2,h3,h4,h5,p {
 h1 {
   font-size:${(props) => props.theme.font.size.extralarge};
   font-weight:${(props) => props.theme.font.weight.semiBold};
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
+    text-align:center;
+    font-size:${(props) => props.theme.font.size.large};
+  }
 }
 /* herro slogan 2nd line*/
 h2 {
   font-size:${(props) => props.theme.font.size.regular};
   font-weight:${(props) => props.theme.font.weight.regular};
   text-transform:uppercase;
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
+    text-align:center;
+    font-size:${(props) => props.theme.font.size.small};
+  }
 }
 /* hero elements*/
 h3 {
   font-size:${(props) => props.theme.font.size.regular};
   font-weight:${(props) => props.theme.font.weight.medium};
   text-transform:uppercase;
+
 }
 /* section header*/
 h4 {
@@ -45,6 +58,10 @@ h4 {
   font-weight:${(props) => props.theme.font.weight.regular};
   color:${(props) => props.theme.color.secondary};
   text-transform:uppercase;
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
+    text-align:center;
+    font-size:${(props) => props.theme.font.size.big};
+  }
 }
 
 /* section subheader*/
@@ -53,6 +70,9 @@ h5 {
   font-weight:${(props) => props.theme.font.weight.regular};
   color:${(props) => props.theme.color.secondary};
   text-transform:uppercase;
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
+    font-size:${(props) => props.theme.font.size.big};
+  }
 }
 
 ul {

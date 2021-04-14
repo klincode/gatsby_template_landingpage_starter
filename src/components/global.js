@@ -74,6 +74,9 @@ export const Footer = styled.footer`
   overflow: hidden;
   border: 1px solid greenyellow;
   @media (max-width: ${(props) => props.theme.screen.xs}) {
-    padding: 30px 0px;
+    padding: 10px 0px;
+    ul {
+      flex-direction: column;
+    }
   }
 `;
